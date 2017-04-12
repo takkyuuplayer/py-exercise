@@ -5,6 +5,7 @@ class TestBasicFunctions(unittest.TestCase):
     def test_math_operation(self):
         self.assertEquals(3, 1 + 2)
         self.assertEquals(27, 3 ** 3)
+        self.assertEquals(1.4, 7/5)
 
     def test_type(self):
         self.assertEquals(int, type(10))
@@ -34,6 +35,10 @@ class TestBasicFunctions(unittest.TestCase):
                 }
 
         self.assertEqual(180, dic['height'])
+
+    def test_boolean(self):
+        self.assertTrue(True)
+        self.assertTrue(not False)
 
     def test_for_loop(self):
         arr = []
