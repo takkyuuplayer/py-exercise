@@ -29,6 +29,8 @@ class TestBasicFunctions(unittest.TestCase):
         self.assertEquals([1,2,3], a[:3])
         self.assertEquals([1,2,3,4], a[:-1])
 
+        self.assertEquals([1,2,1,2,1,2], [1, 2] * 3)
+
     def test_dictionary(self):
         dic = {
                 'height': 180,
