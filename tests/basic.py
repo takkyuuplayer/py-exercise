@@ -3,15 +3,15 @@ import unittest
 class TestBasicFunctions(unittest.TestCase):
 
     def test_math_operation(self):
-        self.assertEquals(3, 1 + 2)
-        self.assertEquals(27, 3 ** 3)
-        self.assertEquals(1.4, 7/5)
+        self.assertEqual(3, 1 + 2)
+        self.assertEqual(27, 3 ** 3)
+        self.assertEqual(1.4, 7/5)
 
     def test_type(self):
-        self.assertEquals(int, type(10))
-        self.assertEquals(str, type('0'))
-        self.assertEquals(float, type(1.5))
-        self.assertEquals(list, type([1, 2, 3]))
+        self.assertEqual(int, type(10))
+        self.assertEqual(str, type('0'))
+        self.assertEqual(float, type(1.5))
+        self.assertEqual(list, type([1, 2, 3]))
 
     def test_variable(self):
         x = 10
@@ -23,13 +23,13 @@ class TestBasicFunctions(unittest.TestCase):
 
         self.assertEqual(3, a[2])
         self.assertEqual(5, len(a))
-        self.assertEquals([1,2,3,4,5], a)
-        self.assertEquals([2,3,4], a[1:4])
-        self.assertEquals(5, a[-1])
-        self.assertEquals([1,2,3], a[:3])
-        self.assertEquals([1,2,3,4], a[:-1])
+        self.assertEqual([1,2,3,4,5], a)
+        self.assertEqual([2,3,4], a[1:4])
+        self.assertEqual(5, a[-1])
+        self.assertEqual([1,2,3], a[:3])
+        self.assertEqual([1,2,3,4], a[:-1])
 
-        self.assertEquals([1,2,1,2,1,2], [1, 2] * 3)
+        self.assertEqual([1,2,1,2,1,2], [1, 2] * 3)
 
     def test_dictionary(self):
         dic = {
