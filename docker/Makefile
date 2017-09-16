@@ -20,4 +20,4 @@ rm:
 	$(DOCKER_COMPOSE) rm -f
 
 run:
-	@$(DOCKER) exec -i $(CONTAINER_NAME) python $(SRC)
+	@$(DOCKER) exec -i $(CONTAINER_NAME) pipenv run python $(SRC)
