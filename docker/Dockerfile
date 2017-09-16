@@ -1,3 +1,4 @@
 FROM python
 
-RUN pip install pipenv
+RUN pip install --upgrade pipenv
+RUN pipenv --update

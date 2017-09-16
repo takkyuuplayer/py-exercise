@@ -6,7 +6,10 @@ python:
   - "3.6"
   - "3.7-dev" # 3.7 development branch
 before_install:
-  - pip install pipenv
+  - pip install --upgrade pipenv
+  - pipenv --update
+  - pip --version
+  - pipenv --version
 install:
   - make install
 script:
